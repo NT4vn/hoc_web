@@ -1,0 +1,234 @@
+header {
+  background-image: url(./css_img_th2/header.png);
+  background-size: auto 100px;
+}
+.logo {
+  height: 36px;
+}
+.header-img1 {
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  left: 80%;
+  animation: moveImg1 3s forwards;
+}
+.header-img2 {
+  height: 70px;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  animation: moveImg2 3s forwards;
+}
+.header-img3 {
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  animation: moveImg3 3s forwards;
+}
+@keyframes moveImg1 {
+  to {
+    left: 30%;
+  }
+}
+@keyframes moveImg2 {
+  to {
+    left: 45%;
+  }
+}
+@keyframes moveImg3 {
+  to {
+    left: 63%;
+  }
+}
+nav {
+  margin-top: 20px;
+}
+nav a {
+  float: left;
+  margin-left: 3px;
+  border: 1px solid #fff;
+  padding: 2px 4px;
+  height: 20px;
+  text-align: center;
+  line-height: 17px;
+  color: #ed4190;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+  background-color: #ed4190;
+}
+.search-bar {
+  margin-top: 3px;
+  float: right;
+}
+.search-bar input {
+  padding: 4px;
+}
+.search-bar button {
+  padding: 4px;
+  width: 30px;
+  color: #fff;
+  background-color: #cddc39;
+  border: none;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #ed4190;
+}
+.cart-btn {
+  color: #ed4190;
+}
+
+footer {
+  margin-top: 2px;
+  border: 1px solid #ccc7c8;
+  border-radius: 5px;
+  padding: 0px 5px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+footer .social-links a {
+  color: #ed4190;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 18px;
+}
+footer .social-links a:hover {
+  color: #fff;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  padding: 10px;
+  background-color: #ed4190;
+  background-image: url("top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-decoration: none;
+  z-index: 10;
+  border-radius: 5px;
+}
+.back-to-top:hover {
+  background-color: #cec7e8;
+  color: #ed4190;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  color: #f9086d;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 34px;
+}
+h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #f9086d;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+}
+h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #f9086d;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.container {
+  display: flex; /* Sử dụng Flexbox để đặt video và nội dung ngang hàng */
+  align-items: flex-start; /* Đặt hai phần tử bắt đầu từ đỉnh */
+  justify-content: space-between; /* Khoảng cách giữa video và nội dung */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  margin-bottom: 5px;
+  padding: 0px 5px;
+  color: #000000;
+}
+.igm-left {
+  flex: 1;
+  max-width: 30%;
+}
+.igm-left img {
+  width: 100%;
+  height: auto;
+}
+.content-right {
+  flex: 2;
+  max-width: 69%;
+}
+.content-right p {
+  margin: 0;
+}
+.content-left {
+  flex: 2; /* Chiếm 70% không gian */
+  max-width: 69%;
+}
+.content-left p {
+  margin: 0;
+}
+.video-right {
+  flex: 1; /* Chiếm 30% không gian */
+  max-width: 30%;
+}
+.video-right video {
+  width: 100%; /* Đặt video chiếm toàn bộ chiều rộng container của nó */
+  height: auto; /* Giữ tỷ lệ video */
+}
+
+.colum2 {
+  column-count: 2;
+  column-gap: 20px;
+  width: 80%;
+  margin: 0;
+}
+h3 {
+  break-before: column;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+p {
+  line-height: 1.6;
+}
+
+.dathang {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu cần thiết */
+}
+
+.item {
+  display: flex; /* Sắp xếp img và a theo chiều ngang */
+  flex-direction: column; /* Đặt hình ảnh ở trên, liên kết ở dưới */
+  align-items: center; /* Căn giữa các phần tử trong mỗi item */
+  padding: 10px;
+  border: 1px solid #ed4190; /* Viền khung màu hồng */
+  border-radius: 30px; /* Làm tròn các góc */
+  width: 100px; /* Đặt chiều rộng khung cho mỗi item */
+  text-align: center; /* Căn giữa nội dung trong khung */
+}
+
+.item img {
+  padding: 5px;
+}
+
+.item a {
+  text-decoration: none; /* Bỏ gạch chân của liên kết */
+  color: #ed4190; /* Màu chữ của liên kết */
+  font-weight: bold; /* Chữ đậm */
+  margin-top: 10px; /* Khoảng cách giữa ảnh và liên kết */
+}
