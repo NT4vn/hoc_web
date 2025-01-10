@@ -131,7 +131,6 @@ h2 {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #f9086d;
-  text-align: center;
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -217,8 +216,8 @@ p {
   align-items: center; /* Căn giữa các phần tử trong mỗi item */
   padding: 10px;
   border: 1px solid #ed4190; /* Viền khung màu hồng */
-  border-radius: 30px; /* Làm tròn các góc */
-  width: 100px; /* Đặt chiều rộng khung cho mỗi item */
+  border-radius: 20px; /* Làm tròn các góc */
+  width: auto; /* Đặt chiều rộng khung cho mỗi item */
   text-align: center; /* Căn giữa nội dung trong khung */
 }
 
@@ -227,8 +226,53 @@ p {
 }
 
 .item a {
-  text-decoration: none; /* Bỏ gạch chân của liên kết */
-  color: #ed4190; /* Màu chữ của liên kết */
-  font-weight: bold; /* Chữ đậm */
-  margin-top: 10px; /* Khoảng cách giữa ảnh và liên kết */
+  text-decoration: none;
+  color: #ed4190;
+  font-weight: bold;
+  margin-top: 10px;
 }
+
+/* section san pham */
+.sptt,
+.sptc,
+.spm {
+  display: flex;
+  margin: 0px auto;
+  padding: 0;
+  flex-wrap: nowrap; /* Đảm bảo các phần tử con nằm trên một dòng */
+  justify-content: space-between;
+}
+article h1 {
+  text-align: center;
+}
+.sp {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các mục con theo chiều dọc */
+  margin: 3px;
+  border: 1px solid #dbd7d9;
+  padding: 0;
+  flex: 1 1 calc(33.333% - 6px); /* Đảm bảo các phần tử con có chiều rộng bằng nhau và khoảng cách đều */
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to top,
+    #cddc39,
+    rgba(0, 0, 0, 0) 10%
+  ); /* Chuyển màu từ #cddc39 đến trong suốt */
+}
+
+.sp img {
+  display: block;
+  margin: auto;
+}
+
+span {
+  display: block;
+  margin: 4px;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+}
+
+/* css tin tuc */
+/* css dang ky */

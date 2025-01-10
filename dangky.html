@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stype.css" />
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"
+        ><img class="logo" src="./trangchu/logo.png" alt=""
+      /></a>
+      <img src="./css_img_th2/header-img1.png" class="header-img1" alt="" />
+      <img src="./css_img_th2/header-img2.png" class="header-img2" alt="" />
+      <img src="./css_img_th2/header-img3.png" class="header-img3" alt="" />
+      <nav>
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./GioiThieu.html">Giới Thiệu</a>
+        <a href="./SanPham.html">Sản Phẩm</a>
+        <a href="./tintuc.html">Tin Tức</a>
+        <a href="./dangnhap.html">Đăng Nhập</a>
+        <a href="./dangky.html">Đăng Ký</a>
+        <a href="./lienhe.html">Liên Hệ</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm..." />
+        <button class="search-btn"><i class="fa fa-search"></i></button>
+        <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <img src="./trangchu/bg-home.jpg" width="100%" />
+    </header>
+    <fieldset>
+      <legend>
+        <h3>ĐĂNG KÝ</h3>
+      </legend>
+      <table class="form-table">
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Vui lòng nhập lại email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="matkhau">Mật khẩu</label></td>
+          <td>
+            <input
+              type="password"
+              id="matkhau"
+              name="psw"
+              placeholder="Vui long nhap lai mk"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="nhaplaimatkhau">Nhập lại mật khẩu</label></td>
+          <td>
+            <input
+              type="password"
+              id="nhaplaimatkhau"
+              name="psw2"
+              placeholder="Vui long nhap lai mk"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="capdothanhvien">Cấp độ thành viên</label></td>
+          <td><input type="radio" id="capdothanhvien" name="memberType" /></td>
+        </tr>
+        <tr>
+          <td><label for="anhdaidien">Ảnh đại diện</label></td>
+          <td><input type="file" id="anhdaidien" name="anhdaidien" /></td>
+        </tr>
+        <tr>
+          <td><input type="reset" value="Hủy" /></td>
+          <td><input type="submit" value="Đăng ký" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <footer>
+      <p>2021 Bản quyền thuộc về FreeezeVN.</p>
+      <div class="social-links">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <a href="#" class="back-to-top">Về đầu trang</a>
+    </footer>
+  </body>
+</html>
